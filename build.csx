@@ -24,7 +24,7 @@ targets.Add(
     {
         foreach (var solution in demoSolutions)
         {
-            Cmd(nuget, $"restore {solution}");
+            Cmd("dotnet", $"restore {solution}");
         }
     });
 
